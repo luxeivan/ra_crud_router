@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__item {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(34, 37, 234);
+  color: white;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  background-color: rgb(68, 71, 237);
+}
+
+.posts {
+  list-style: none;
+}
+
+.posts__item {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #123456;
+}
+.posts__link{
+  display: block;
+  
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.posts__item:hover {
+  cursor: pointer;
+  animation: color .5s;
+  animation-timing-function: ease-in-out; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes color {
+  from {
+    background-color: #123456;
+  }
+
+  to {
+    background-color: #234567;
+  }
+}
+
+.post {
+  margin: 0 auto;
+  width: 300px;
+  border: 2px solid #eee;
+  position: relative;
+  border-radius: 5px;
+}
+
+.post__del {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -20px;
+  right: -10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 7px;
+  text-align: center;
+  color: red;
+}
+.post__edit {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -20px;
+  left: -10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 7px;
+  text-align: center;
+  color: red;
+}
+.post__form{
+  display: flex;
+  flex-direction: column;
+}
+.post__input{
+  margin: 10px;
+}
+.post__change{
+  background-color: red;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  margin: 10px;
+}
+.post__change:hover{
+  cursor: pointer;
+  background-color: rgb(250, 57, 57);
+}
+.post__del:hover {
+  cursor: pointer;
+}
+.post__edit:hover {
+  cursor: pointer;
+}
+
+.post__time {
+  color: #aaa;
+}
+
+.newpost {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.newpost__text {
+  outline: 0;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 80%;
+}
+
+.newpost__button {
+  padding: 10px;
+  border: 0;
+  background-color: #123456;
+  color: white;
+}
+
+.newpost__button:hover {
+  background-color: #234567;
+  cursor: pointer;
+}
